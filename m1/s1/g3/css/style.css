@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+
+#logo{
+    width: 8%;
+}
+
+nav{
+    border-top: 0.1em  solid yellow;
+    background-color: beige;
+    color: #006400;
+    padding: 1%;
+    font-size: 0.8em;
+}
+
+.contenuto{
+    margin: auto;
+    width: 50%;
+    
+}
+
+#autore{
+    display:block;
+    padding-top: 0.5em;
+    color: gray;
+}
+
+#feat{
+    border-left: 1px solid #ffd977;
+    padding-left: 1em;
+    margin-top: 2rem;
+    display: block;
+    text-align: left;
+     }
+
+#feat, a {
+    display: block;
+}
+
+
+
+
+h2{
+    font-weight: 100;
+    text-align: left;
+    border-bottom: 1px solid green ;
+    margin-bottom: 2rem;
+    height: 3rem;
+     }
+
+.ingredients{
+    text-align: left;
+    margin-top: 4rem;
+}
+
+.section-header{
+    margin-bottom: 2rem;
+   
+}
+
+ul{
+    margin-bottom: 2rem;
+}
