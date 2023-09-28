@@ -1,0 +1,67 @@
+body{
+    margin: 15px;
+    background-image: url(sfondo.png);
+    background-repeat: repeat-y;
+    background-attachment: unset;
+    background-size: 90%;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+#inizio{
+    color: white;
+    background-color: rgb(11, 44, 11);
+    text-align: center; 
+}
+
+    
+a{
+    color: white;
+}
+
+main{
+    background-color: white;
+}
+
+#video{
+    text-align: center;
+}
+
+h1{
+text-align: center;
+font-size: 45px;
+margin-bottom: 30px;}
+
+h2{
+    font-size: 45px;
+}
+
+
+aside{
+background-color: white;
+}
+
+footer{
+    background-color: rgb(17, 5, 29);
+    color: white;
+}
+
+section{
+    background-color: gray;
+    font-size: 45px;
+    padding: 4%;
+}
+
+p{
+    font-size: 20px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+ol,ul {
+    font-size: 20px;
+}
+
+
