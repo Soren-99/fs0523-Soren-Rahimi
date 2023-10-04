@@ -19,6 +19,7 @@ console.log(result)
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
+{
 function verifyNumber(number){
   if (number !== 5){
     console.log("not equal")
@@ -28,6 +29,7 @@ function verifyNumber(number){
 let numberToVerify = 9
 verifyNumber(numberToVerify)
 
+}
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
@@ -61,30 +63,34 @@ verifyNumber8 (10, 2)
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-var totalShoppingAmount = 70
-var shipping = 10
+{
+
+let totalShoppingAmount = 70
+let shipping = 10
 
 if (totalShoppingAmount > 50){
-  var totalAmount = totalShoppingAmount
+  let totalAmount = totalShoppingAmount
 } else { 
-  var totalAmount = totalShoppingAmount + shipping
+  let totalAmount = totalShoppingAmount + shipping
 }
 
 console.log(totalAmount)
+
+}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-var totalShoppingAmount = 70
-var shipping = 10
-var discountTot = 70 * 0,8
+let totalShoppingAmount = 70
+let shipping = 10
+let discountTot = 70 * 0.8
 
 if (discountTot > 50){
-  var totalAmount = discountTot
+  let totalAmount = discountTot
 } else {
-  var totalAmount = discountTot + shipping
+  let totalAmount = discountTot + shipping
 }
 
 console.log(totalAmount)
