@@ -1,0 +1,160 @@
+/* Your styles here */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efefef;
+}
+
+header{
+    background-color: #232f3e
+}
+
+#logo{
+    width: 75px;
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#inizio{
+    background-color: #2d343d;
+    padding-left: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    }
+p{
+    color: white;
+    display: inline;
+    margin: 5px;
+    font-size: 12px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+    
+main{
+    margin-right: 4%;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background-color: #ef6400;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-size: 12px;
+}
+
+#inizia{
+    text-align: center;
+    background-image: url(../images/bg-image.png);
+    padding: 5%;
+    padding-bottom: 2%;
+    margin-top: 2% ;
+    margin-bottom: 2%;
+
+}
+
+h2{
+    font-size: 20px;
+    color: white;
+   
+}
+
+h3{
+    font-size: 14px;
+    color: white;
+    padding-top: 2.5%;
+    padding-bottom: 1.5%;
+    
+     
+}
+
+section{
+    margin-top: 2% ;
+    margin-bottom: 2% ;
+    border:hsl(from color h s l) ;
+    background-color: white;
+}
+
+.immagini{
+    
+    height: 350px;
+    border-radius: 10%;
+    box-shadow: 2px 2px rgb(199, 199, 199);
+    width: 22%;
+    padding: 1%;
+  
+    
+}
+
+#sezione1{
+    padding-left: 2.8%;
+   
+}
+
+.headings{
+    display: inline-block;
+    padding-top: 1%;
+    padding-left: 1%;
+}
+
+h5{
+    font-size: 11px;
+    color: rgb(24, 107, 110);
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+#immagine9{
+    width: 100%;
+}
+
+#immagine10{
+    width: 100%;
+}
+
+h4, h5{
+    display: inline-block;
+}
+
+#sezione2 {
+    text-align: center;
+    border: 0%;
+}
+
+#sezione3 {
+    text-align: center;
+}
+
+#back{
+    background-color: #3b4757;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 11px;
+}
+
+a{
+    color: white;
+   
+}
+
+footer{
+    background-color: #232f3e;
+    text-align: center;
+    
+}
+
+
+#ultimo{
+    width: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  
+}
+
+

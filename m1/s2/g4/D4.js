@@ -70,7 +70,12 @@ function check3and7(number){
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
+function reverseString(stringa){
+    return stringa.split('').reverse().join('');
 
+}
+
+console.log(reverseString("EPICODE"));
    
 
 /* ESERCIZIO 8
