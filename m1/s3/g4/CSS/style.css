@@ -1,0 +1,45 @@
+body {
+    text-align: center;
+}
+
+.container{
+    background-color: yellow;
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 400px;
+}
+
+
+button {
+    background-color: grey;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+h1{
+    color: black;
+    font-size: 50px;
+}
+
+.scoreboard {
+    display: grid;
+    grid-template-columns: repeat(9, 3fr);
+    grid-gap: 8px;
+}
+
+.cell {
+    padding: 8px;
+    background-color: gray;
+
+    
+}
+
+.underlined {
+    background-color: aquamarine;
+}
