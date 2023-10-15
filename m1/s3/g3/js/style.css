@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+
+.contenuto{
+    margin-top: 10%;
+    background-color: yellow;
+}
+
+button{
+   color: blue;
+}
