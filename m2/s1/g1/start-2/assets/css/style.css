@@ -253,3 +253,13 @@ footer a {
 
     
 }
+
+@media print {
+    body{
+        background-image: none;
+    }
+
+    main {
+        box-shadow: none;
+    }
+}
