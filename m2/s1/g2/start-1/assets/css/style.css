@@ -27,6 +27,8 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0;
 }
 
 @media screen and (min-width: 800px) {
@@ -410,5 +412,8 @@ footer a {
 
 .novit{
   position: absolute;
-  top: -10px;
+  top: -20px;
+  box-shadow: 3px 3px 3px 0 gray;
 }
+
+
