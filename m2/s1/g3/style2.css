@@ -1,0 +1,32 @@
+
+.contenuto{
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #fef7e2;
+    width: 65%;
+    min-width: 300px;
+    min-height: 150px;
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25%;
+    box-sizing: border-box;
+}
+
+nav * {
+    margin: 11px;
+    background-color: #ffdf7e;
+    border-radius: 100px;
+
+    display: flex;
+} 

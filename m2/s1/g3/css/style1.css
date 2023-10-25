@@ -1,0 +1,79 @@
+
+:root{
+    color: #742305;
+}
+
+body{
+    padding: 90px;
+}
+
+.carta{
+    width: 15vw;
+    min-width: 250px;
+    min-height: 40vh;
+    background-color:  #fef7e2;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.carta .immagine{
+    flex: 3 0 250px;
+    object-fit: cover;
+}
+
+.carta .info{
+    flex: 1 0 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.carta div{
+    width: 100%;
+}
+
+.info .data{
+    flex: 2 0 65%;
+    display: flex;
+    align-items: center;
+}
+
+.data .nome{
+    flex: 2 0 65%;
+    text-align: center;
+
+}
+
+.nome .main{
+    font-weight: bold;
+}
+
+.data .prezzo{
+    flex: 1 0 35%;
+    text-align: center;
+}
+
+.info .button{
+    flex: 1 0 35%;
+    text-align: center;
+}
+
+.button a{
+   padding: 15px 30px;
+   background-color: #ffdf7e ;
+   border: none;
+   border-radius: 50px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #742305;
+}
+
+.data{
+    font-size: 20px;
+}
