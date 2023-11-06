@@ -1,0 +1,143 @@
+:root{
+    --home-bg-color: #000;
+}
+
+body{
+    background: var(--home-bg-color);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.elementoD{
+    margin-right: -1%;
+}
+
+h4{
+    font-size: 35px;
+    color: white;
+}
+    
+.nav-link{
+    font-size: 12px;
+}
+
+.btn{
+    background-color: #000;
+}
+
+#logo{
+    height: 38px;
+    margin-left: -12%;
+    margin-top: -5%;
+}
+
+#avatar {
+    height: 28px;
+}
+
+.prev{
+    margin-left: -2.1%;
+}
+
+.next{
+    margin-right: -2.1% ;
+}
+
+.containerFooter{
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 15%;
+    
+}
+
+.bi{
+    margin-right: 2%;
+    margin-bottom: 1.5%;
+
+}
+
+.service{
+    font-size: 12px;
+}
+
+
+#logo2{
+    height: 45px;
+}
+
+.profile-title{
+    font-size: 65px;
+}
+
+.custom-hr{
+    border-top: 1px solid #d3d3d3;
+    width: 500px;
+    margin-top: -2%;
+}
+
+.form-control{
+    background-color: rgb(97, 95, 95);
+    color: white;
+    margin-left: 9%;
+    width: 300px;
+     }
+
+.l{
+    font-size: 18px;
+    color: rgb(150, 147, 147);
+}
+
+.lingua{
+    margin-left: 9%;
+    margin-top: 13%;
+    margin-bottom: -2%;
+}
+
+.kids{
+    margin-top: -350px
+    
+}
+
+.custom-hr2{
+    border-top: 1px solid #d3d3d3;
+    width: 300px;
+    margin-left: 8%;
+    margin-right: 10%;
+}
+
+.show{
+    font-size: 11px;
+}
+
+.sec, .sec2{
+    margin-left: 9%;
+}
+
+
+
+.all{
+    background-color: rgb(77, 75, 75);
+    font-size: 12px;
+}
+
+.b1{
+    width: 105%;
+    background-color: white;
+}
+
+.b2{
+    width: 110%;
+}
+
+.b3{
+    width: 150%;
+}
+
+.aut{
+    font-size: 10px;
+}
+
+.b{
+    font-weight: bold;
+}
+
