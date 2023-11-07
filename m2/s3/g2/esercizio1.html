@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 1</title>
+</head>
+<body>
+    <div id="savedValue"></div>
+    <input type="text" id="nameInput" placeholder="Inserisci il tuo nome">
+    <button onclick="saveName()">Salva</button>
+    <button onclick="removeName()">Rimuovi</button>
+
+    <script>
+        const nameInput = document.getElementById('nameInput');
+        const savedValueDiv = document.getElementById('savedValue');
+
+        
+        function saveName() {
+            const name = nameInput.value;
+            if (name) {
+                localStorage.setItem('savedName', name);
+                savedValueDiv.innerText = (name);
+            }
+        }
+        
+        function removeName() {
+            localStorage.removeItem('savedName');
+            savedValueDiv.innerText = '';
+            nameInput.value ='';
+        }
+        
+        if (localStorage.getItem('savedName')) {
+            savedValueDiv.innerText =  'Valore precedentemente salvato:' + localStorage.getItem('savedName');
+        }
+    </script>
+
+
+</body>
+</html>

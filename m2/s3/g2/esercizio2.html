@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 2</title>
+</head>
+<body onload="init()">
+    <h1>Contatore di tempo</h1>
+    <p>Tempo trascorso: <span id="counter">0</span>secondi</p>
+
+
+
+
+</body>
+
+<script>
+
+
+
+
+    function startCounter () {
+        var counter = sessionStorage.getItem('counter');
+        if (counter) {
+            counter = parseInt(counter);
+        } else {
+            counter = 0;
+        }
+
+        var interval = setInterval(function() {
+            counter++; 
+            sessionStorage.setItem('counter', counter);
+            document.getElementById('counter').innerHTML = counter;
+        }, 1000)
+    }
+
+    function init() {
+        if (typeof(Storage) !== "undefined") {
+            startCounter();
+        } else {
+            document.getElementById('counter').innerHTML = "SessionStorafe non è supportato dal browser.";
+        }
+    }
+
+
+
+
+
+
+</script>
+</html>
