@@ -1,0 +1,2 @@
+const apiUrl = 'https://striveschool-api.herokuapp.com/api/product/';
+const token = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRlMGE1NzMyNWM5NzAwMTg3ZjlmN2IiLCJpYXQiOjE2OTk2MTMyNzEsImV4cCI6MTcwMDgyMjg3MX0.n6EIYBZEFWJ2X6DwaKXnpKeHNWBple7GsaakPQsmbIY';
