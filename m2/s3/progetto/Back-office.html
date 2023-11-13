@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back-office</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a href="#">
+                <img src="soren.png" class="logo" width="80" height="50">           
+            </a>
+            <div class="mx-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="Home-page.html" class="btn btn-primary nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Detail.html" class="btn btn-primary nav-link">PRODUCT LIST</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container0">
+        <h2 class="text-center mb-2">ADD or EDIT</h2>
+        <h2 class="text-center">PRODUCT</h2>
+        <div class="mb-4 mt-4">
+            <input type="text" id="productName" placeholder="Insert product name" class="form-control">
+        </div>
+        <div class="mb-4">
+            <input type="text" id="description" placeholder="Insert product description" class="form-control">
+        </div>
+        <div class="mb-4">
+            <input type="text" id="brand" placeholder="Insert product brand" class="form-control"> 
+        </div>
+        <div class="mb-4">
+            <input type="text" id="imageProduct" placeholder="Insert product URL image" class="form-control">
+        </div>
+        <div class="mb-5">
+            <input type="number" id="priceProduct" placeholder="Insert product price" class="form-control">
+        </div>
+        <div class="text-center">
+            <button id="create" class="btn btn-primary">Generate Product</button>
+            <button id="reset" class="btn btn-primary">Reset</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="Back-office.js"></script>
+</body>
+</html>
