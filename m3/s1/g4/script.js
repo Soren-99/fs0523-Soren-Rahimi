@@ -52,18 +52,3 @@ fetchAbbigliamento()
     .catch((error) => {
     console.error(error.message);
 });
-/* fetchAbbigliamento()
-  .then((capi) => {
-    if (capi.length > 0) {
-      const primoCapo = capi[0];
-      primoCapo.getsaldocapo(45);
-
-      const costoTotale = primoCapo.getacquistocapo();
-      console.log(`Il costo totale del capo ${primoCapo.capo} è ${costoTotale}`);
-    } else {
-      console.error('Nessun dato trovato nell\'abbigliamento.');
-    }
-  })
-  .catch((error) => {
-    console.error('Errore nel recupero dei dati dell\'abbigliamento:', error.message);
-  }); */
