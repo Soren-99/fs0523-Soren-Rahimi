@@ -1,6 +1,8 @@
+
+
 import { Component } from '@angular/core';
-import { PizzeService } from '../../pizze.service';
-import { IPizza } from '../../Models/ipizza';
+import { IPost } from '../../Models/ipizza';
+import { PostsService } from '../../pizze.service';
 
 @Component({
   selector: 'app-active',
@@ -9,11 +11,11 @@ import { IPizza } from '../../Models/ipizza';
 })
 export class ActiveComponent {
 
-  pizze:IPizza[]=[];
+  posts:IPost[]=[];
 
-  constructor(private pizzeSvc:PizzeService){}
+  constructor(private postsSvc:PostsService){}
 
   ngOnInit(){
-    this.pizze = this.pizzeSvc.getActivePizzas()
+    this.posts = this.postsSvc.getActivePosts()
   }
 }

@@ -1,6 +1,6 @@
-export interface IPizza {
+export interface IPost {
   id: number
-  gusto: string
-  prezzo: number
+  body: string
+  title: string
   active: boolean
 }
