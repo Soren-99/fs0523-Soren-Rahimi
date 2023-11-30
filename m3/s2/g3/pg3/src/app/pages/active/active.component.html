@@ -1,1 +1,8 @@
-<p>active works!</p>
+<div class="row">
+  <div class="col-12" *ngFor="let p of postArr">
+    <app-card [post]="p">
+      <a (click)="toggleStatus(p)" class="btn btn-primary">Cambia status</a>
+    </app-card>
+  </div>
+</div>
+

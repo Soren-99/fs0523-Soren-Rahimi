@@ -8,6 +8,7 @@ import { ActiveComponent } from './pages/active/active.component';
 import { InactiveComponent } from './pages/inactive/inactive.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ActiveComponent,
     InactiveComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
