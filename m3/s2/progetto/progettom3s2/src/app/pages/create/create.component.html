@@ -63,7 +63,7 @@
 <button (click)="save()">+</button>
 
 <!-- Aggiungi la tabella per mostrare i task -->
-<table *ngIf="todos && todos.length > 0">
+<!--<table *ngIf="todos && todos.length > 0">
   <tr>
     <th>#</th>
     <th>Title</th>
@@ -72,6 +72,20 @@
     <td>{{t.id}}</td>
     <td>{{t.title}}</td>
   </tr>
-</table>
+</table>-->
 
+<table *ngIf="todos && todos.length > 0">
+  <tr>
+    <th>#</th>
+    <th>Title</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor="let t of todos">
+    <td>{{t.id}}</td>
+    <td>{{t.title}}</td>
+    <td>
+      <button (click)="deleteTodo(t.id)">Delete</button>
+    </td>
+  </tr>
+</table>
 
