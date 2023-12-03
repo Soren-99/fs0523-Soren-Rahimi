@@ -6,9 +6,15 @@
   <tr>
     <th>#</th>
     <th>Title</th>
+    <th>Azioni</th>
   </tr>
   <tr *ngFor="let t of todos">
     <td>{{t.id}}</td>
     <td>{{t.title}}</td>
+    <td>{{t.completed}}</td>
+    <td>
+      <a [routerLink]="['/menu', 'edit',t.id]">Modifica</a>
+      <button>Crea</button>
+    </td>
  </tr>
 </Table>
