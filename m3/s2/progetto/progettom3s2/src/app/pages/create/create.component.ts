@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
+import { iTodo } from '../../Models/itodo';
 import { Todo } from '../../Models/todo';
 import { TodoService } from '../../todo.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create',
@@ -9,30 +9,34 @@ import { Router } from '@angular/router';
   styleUrl: './create.component.scss'
 })
 export class CreateComponent {
+todos: any;
 
   constructor(
     private todoSvc:TodoService,
-    private router:Router){}
+    /*private router: Router*/){}
 
   newTodo:Partial<Todo> = {
-    completed:false
+    completed:'0'
   };
 
-  oldTodo:Todo|null = null;
-  loading:boolean = false;
-  showOppsMessage: boolean = true;
+  oldTodo:Todo|null= null;
 
+  loading:boolean = false
 
   save(){
     this.loading = true;
-    this.newTodo.completed = Boolean(Number(this.newTodo.completed));
+    this.newTodo.completed = Boolean(this.newTodo.completed);
     this.todoSvc.create(this.newTodo).then(res => {
       this.loading = false
       this.oldTodo = res;
-      this.showOppsMessage = false;
-      setTimeout(()=>{
+      /*setTimeout(()=>{
       this.router.navigate(['/'])
-      },3000)
+      },3000)*/
+
+
+      this.todoSvc.getAll().then(todos => {
+        this.todos = todos;
+      })
     })
   }
 }

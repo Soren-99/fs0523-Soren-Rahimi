@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "progetto-m3-s2": {
+    "progettom3s2": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/progetto-m3-s2",
+            "outputPath": "dist/progettom3s2",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "progetto-m3-s2:build:production"
+              "buildTarget": "progettom3s2:build:production"
             },
             "development": {
-              "buildTarget": "progetto-m3-s2:build:development"
+              "buildTarget": "progettom3s2:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "progetto-m3-s2:build"
+            "buildTarget": "progettom3s2:build"
           }
         },
         "test": {

@@ -1,0 +1,77 @@
+<!--<form>
+  <input type="text" placeholder="Title" [(ngModel)]="newTodo.title" name="title">
+  - <select name="completed" [(ngModel)]="newTodo.completed">
+    <option value="1">Completed</option>
+    <option value="0">Not completed</option>
+  </select>
+  <button (click)="save()">+</button>
+</form>
+
+<div *ngIf="loading">
+  Recupero Task...
+</div>
+
+<div *ngIf="oldTodo">
+  Hai creato il todo {{oldTodo.title}}
+</div>-->
+
+
+<!--<form *ngIf="!oldTodo">
+  <h3>Opps, non ci sono Task</h3>
+
+
+</form>
+
+<div *ngIf="loading" class="alert">
+  Recupero Task...
+</div>
+
+<div *ngIf="oldTodo">
+
+  <div *ngIf="!loading">
+    <h3>- imparare angular</h3>
+  </div>
+  <div *ngIf="!loading">
+    <h3>- inserire funzione add</h3>
+  </div>
+
+
+</div>
+
+<input type="text" placeholder="Title" [(ngModel)]="newTodo.title" name="title" class="form-control">
+
+<button (click)="save()">+</button>-->
+
+<form *ngIf="!oldTodo">
+  <h3>Oops, non ci sono Task</h3>
+</form>
+
+<div *ngIf="loading" class="alert">
+  Recupero Task...
+</div>
+
+<div *ngIf="oldTodo">
+  <div *ngIf="!loading">
+    <h3>- imparare angular</h3>
+  </div>
+  <div *ngIf="!loading">
+    <h3>- inserire funzione add</h3>
+  </div>
+</div>
+
+<input type="text" placeholder="Title" [(ngModel)]="newTodo.title" name="title" class="form-control">
+<button (click)="save()">+</button>
+
+<!-- Aggiungi la tabella per mostrare i task -->
+<table *ngIf="todos && todos.length > 0">
+  <tr>
+    <th>#</th>
+    <th>Title</th>
+  </tr>
+  <tr *ngFor="let t of todos">
+    <td>{{t.id}}</td>
+    <td>{{t.title}}</td>
+  </tr>
+</table>
+
+

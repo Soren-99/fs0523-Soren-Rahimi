@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoComponent } from './pages/todo/todo.component';
+import { MenuComponent } from './pages/menu/menu.component';
 import { CreateComponent } from './pages/create/create.component';
 import { EditComponent } from './pages/edit/edit.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent,
+    MenuComponent,
     CreateComponent,
     EditComponent,
     HeaderComponent,
