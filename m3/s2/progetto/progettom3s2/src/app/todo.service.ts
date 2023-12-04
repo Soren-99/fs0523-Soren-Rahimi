@@ -10,6 +10,8 @@ export class TodoService {
 
   apiUrl:string = 'http://localhost:3000/todos';
 
+
+
   getAll():Promise<Todo[]>{
     return fetch(this.apiUrl).then(res => res.json())
   }
@@ -19,6 +21,7 @@ export class TodoService {
   }
 
   create(todo:Partial<Todo>):Promise<Todo>{
+
     return fetch(this.apiUrl,{
       method:'POST',
       headers:{
@@ -29,6 +32,7 @@ export class TodoService {
   }
 
   update(todo:Todo):Promise<Todo>{
+
     return fetch(this.apiUrl+`/${todo.id}`,{
       method:'PUT',
       headers:{
@@ -46,6 +50,7 @@ export class TodoService {
       }
     }).then(res => res.json())
   }
+
 
 }
 

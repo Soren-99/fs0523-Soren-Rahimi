@@ -23,32 +23,15 @@ todos: any;
 
   loading:boolean = false
 
-  /*save(){
-    this.loading = true;
-    this.newTodo.completed = Boolean(this.newTodo.completed);
-    this.todoSvc.create(this.newTodo).then(res => {
-      this.loading = false
-      this.oldTodo = res;
-      -setTimeout(()=>{
-      this.router.navigate(['/'])
-      },3000)
 
-
-      this.todoSvc.getAll().then(todos => {
-        this.todos = todos;
-      })
-    })
-  }*/
 
   save() {
     this.loading = true;
-    this.newTodo.completed = Boolean(this.newTodo.completed);
+    this.newTodo.completed = true /*Boolean(Number(this.newTodo.completed));*/
     this.todoSvc.create(this.newTodo).then(res => {
-      this.loading = false;
-      this.oldTodo = res;
-
-      // Dopo aver creato il nuovo todo, recupera tutti i task aggiornati
-      this.refreshTodos();
+    this.loading = false
+    this.oldTodo = res;
+    this.refreshTodos();
     });
   }
 
@@ -58,10 +41,10 @@ todos: any;
     });
   }
 
-  // Metodo per cancellare un todo specifico
+
   deleteTodo(todoId: number) {
     this.todoSvc.delete(todoId).then(() => {
-      // Dopo aver cancellato il todo, aggiorna l'array dei todos
+
       this.refreshTodos();
     });
   }

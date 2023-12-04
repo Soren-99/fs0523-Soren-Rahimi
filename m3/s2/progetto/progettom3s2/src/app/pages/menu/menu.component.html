@@ -1,3 +1,4 @@
+<div class="contenuto2">
 <div *ngIf="!todos.length">
   Recupero Task...
 </div>
@@ -13,8 +14,9 @@
     <td>{{t.title}}</td>
     <td>{{t.completed}}</td>
     <td>
-      <a [routerLink]="['/menu', 'edit',t.id]">Modifica</a>
-      <button>Crea</button>
+      <a class="edit-button" [routerLink]="['/menu', 'edit',t.id]">Modifica</a>
+      <a class="create-button"  routerLink="/">Crea</a>
     </td>
  </tr>
 </Table>
+</div>

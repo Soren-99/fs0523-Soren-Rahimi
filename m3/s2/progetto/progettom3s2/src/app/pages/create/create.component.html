@@ -1,10 +1,6 @@
-<!--<form>
-  <input type="text" placeholder="Title" [(ngModel)]="newTodo.title" name="title">
-  - <select name="completed" [(ngModel)]="newTodo.completed">
-    <option value="1">Completed</option>
-    <option value="0">Not completed</option>
-  </select>
-  <button (click)="save()">+</button>
+<div class="contenuto">
+<form *ngIf="!oldTodo" class="form-container">
+<h4>Oops, non ci sono Task</h4>
 </form>
 
 <div *ngIf="loading">
@@ -12,69 +8,21 @@
 </div>
 
 <div *ngIf="oldTodo">
-  Hai creato il todo {{oldTodo.title}}
-</div>-->
-
-
-<!--<form *ngIf="!oldTodo">
-  <h3>Opps, non ci sono Task</h3>
-
-
-</form>
-
-<div *ngIf="loading" class="alert">
-  Recupero Task...
-</div>
-
-<div *ngIf="oldTodo">
-
-  <div *ngIf="!loading">
-    <h3>- imparare angular</h3>
+  <div class="container"  *ngIf="!loading">
+    <h4>- imparare angular</h4>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxElEQVR4nO2UwQ7CIAxA+RwP8+aZcnTxbMt+1vaqn7GZmHnzCzSMgzNuBLaRaLImDSfeKy2g1BopYU72AEJXI/SclthooXJcINhMh5NPxjogmAkXn/8lAMYHMJ2zCICxBcai28t0WVQAPbhb3UmWEzDdtRy3Hl5tjNAtuUWur/2qApW3yUN28CEARMAjBe5mfIIgEp7Qoi9gEQNPGzK/hzk20NkPDbqT2J3PcOVZXrL5MQHm/a61UDlLwlgD2/2oYA01EC+XuL/3Q0dXtwAAAABJRU5ErkJggg==">
   </div>
-  <div *ngIf="!loading">
-    <h3>- inserire funzione add</h3>
-  </div>
-
-
-</div>
-
-<input type="text" placeholder="Title" [(ngModel)]="newTodo.title" name="title" class="form-control">
-
-<button (click)="save()">+</button>-->
-
-<form *ngIf="!oldTodo">
-  <h3>Oops, non ci sono Task</h3>
-</form>
-
-<div *ngIf="loading" class="alert">
-  Recupero Task...
-</div>
-
-<div *ngIf="oldTodo">
-  <div *ngIf="!loading">
-    <h5>- imparare angular</h5>
-    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
-  </div>
-  <div *ngIf="!loading">
-    <h5>- inserire funzione add</h5>
-    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></svg>
+  <div class="container" *ngIf="!loading">
+    <h4>- inserire funzione add</h4>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAxElEQVR4nO2UwQ7CIAxA+RwP8+aZcnTxbMt+1vaqn7GZmHnzCzSMgzNuBLaRaLImDSfeKy2g1BopYU72AEJXI/SclthooXJcINhMh5NPxjogmAkXn/8lAMYHMJ2zCICxBcai28t0WVQAPbhb3UmWEzDdtRy3Hl5tjNAtuUWur/2qApW3yUN28CEARMAjBe5mfIIgEp7Qoi9gEQNPGzK/hzk20NkPDbqT2J3PcOVZXrL5MQHm/a61UDlLwlgD2/2oYA01EC+XuL/3Q0dXtwAAAABJRU5ErkJggg==">
   </div>
 </div>
 
-<input type="text" placeholder="Title" [(ngModel)]="newTodo.title" name="title" class="form-control">
+<div id="bottone">
+<input type="text" placeholder="Title" [(ngModel)]="newTodo.title" name="title">
 <button (click)="save()">+</button>
+</div>
 
-<!-- Aggiungi la tabella per mostrare i task -->
-<!--<table *ngIf="todos && todos.length > 0">
-  <tr>
-    <th>#</th>
-    <th>Title</th>
-  </tr>
-  <tr *ngFor="let t of todos">
-    <td>{{t.id}}</td>
-    <td>{{t.title}}</td>
-  </tr>
-</table>-->
 
 <table *ngIf="todos && todos.length > 0">
   <tr>
@@ -90,4 +38,4 @@
     </td>
   </tr>
 </table>
-
+</div>
