@@ -27,7 +27,7 @@ todos: any;
 
   save() {
     this.loading = true;
-    this.newTodo.completed = true /*Boolean(Number(this.newTodo.completed));*/
+    this.newTodo.completed = true
     this.todoSvc.create(this.newTodo).then(res => {
     this.loading = false
     this.oldTodo = res;
