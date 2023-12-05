@@ -1,0 +1,28 @@
+
+
+<div class="container">
+  <div class="row">
+    <div
+    *ngFor="let prod of products"
+    class="col-12 col-md-6 mb-5">
+
+   <div class="card">
+      <img [src]="prod.thumbnail" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">{{prod.title}}</h5>
+        <p class="card-text">{{prod.description}}</p>
+
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Categoria: {{prod.category}}</li>
+        <li class="list-group-item">Prezzo: {{prod.price | currency}}</li>
+        <li class="list-group-item">Quantità: {{prod.stock}}</li>
+
+      </ul>
+      <button (click)="addToFavorite(prod)" class="btn btn-secondary">Add to favorites</button>
+      <button (click)="addToCart(prod)" class="btn btn-primary">Add to cart</button>
+    </div>
+  </div>
+  </div>
+</div>
+
